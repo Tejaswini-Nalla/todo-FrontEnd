@@ -4,3 +4,12 @@
     margin: auto;
     margin-bottom: 5px;
 }
+
+#todotasks {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 10px;
+    margin-left: 10px;
+}
