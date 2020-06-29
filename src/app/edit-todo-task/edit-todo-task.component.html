@@ -1,1 +1,14 @@
-<p>edit-todo-task works!</p>
+<div [hidden] = "submitted">
+  <form #todoForm = "ngForm"> 
+     <input type = "text" name = "task" placeholder = "Task Name" [(ngModel)] = "task" required> 
+     <br/> 
+     <input type = "text" name = "subtasks" placeholder = "SubTasks" [(ngModel)] = "subtasks"> 
+     <br/> 
+     <button class="btn btn-success">Edit Task</button> 
+  </form>
+</div>
+
+<div [hidden] = "!submitted" id="successMessage">
+  <p>Task <span class="badge badge-light">{{todo.task}}</span>&nbsp;Edited!</p>
+  <button type="button" class="btn btn-dark" (click)="goBack()">Back</button>
+</div>

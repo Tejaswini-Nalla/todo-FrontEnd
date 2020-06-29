@@ -31,4 +31,8 @@ export class ApiService {
                         .subscribe((res) => console.log(res));
 
     }
+
+    getTodoTaskById(id) {
+        return this.http.get(this.hiturl+"/"+id);
+    }
 }
