@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { TodoTasksComponent } from './todo-tasks/todo-tasks.component';
 import { CreateTodoTaskComponent } from './create-todo-task/create-todo-task.component';
 import { FormsModule } from '@angular/forms';
+import { EditTodoTaskComponent } from './edit-todo-task/edit-todo-task.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoTasksComponent,
-    CreateTodoTaskComponent
+    CreateTodoTaskComponent,
+    EditTodoTaskComponent
   ],
   imports: [
     BrowserModule,

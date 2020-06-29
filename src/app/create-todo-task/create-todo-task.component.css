@@ -1,0 +1,13 @@
+input[ type=text] {
+    padding: 10px 5px 10px;
+    margin: 10px 40% 10px 35%;
+    width: 30%;
+}
+
+.btn-success {
+    margin: 10px 45% 10px 45%;
+}
+
+#successMessage {
+    margin: 10px 40% 10px 35%;
+}

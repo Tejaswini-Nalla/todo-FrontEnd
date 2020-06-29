@@ -8,8 +8,8 @@
   </form>
 </div>
 
-<div [hidden] = "!submitted">
-  <p>Task <span class="badge badge-light">{{todo.task}}</span>&nbsp;Created Successfully!</p>
+<div [hidden] = "!submitted" id="successMessage">
+  <p >Task <span class="badge badge-light">{{todo.task}}</span>&nbsp;Created Successfully!</p>
 	<div class="btn-group btn-group-sm">
     	<button type="button" class="btn btn-dark" (click)="goBack()">Back</button>
     	<button type="button" class="btn btn-dark" (click)="newTask(); todoForm.reset()">Continue</button>

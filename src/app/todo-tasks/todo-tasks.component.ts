@@ -30,4 +30,8 @@ export class TodoTasksComponent implements OnInit {
     window.location.reload();
   }
 
+  editTask(id) {
+    this.router.navigate(['../editTask',{'id':id}]);
+  }
+
 }
