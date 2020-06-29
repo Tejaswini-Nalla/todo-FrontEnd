@@ -1,0 +1,27 @@
+<div [hidden] = "submitted">
+  <form #todoForm = "ngForm" (ngSubmit) = "addTask(todoForm.value)"> 
+     <input type = "text" name = "task" placeholder = "Task Name" ngModel required> 
+     <br/> 
+     <input type = "text" name = "subtasks" placeholder = "SubTasks" ngModel> 
+     <br/> 
+     <button class="btn btn-success">Create Task</button> 
+  </form>
+</div>
+
+<div [hidden] = "!submitted">
+  <p>Task <span class="badge badge-light">{{todo.task}}</span>&nbsp;Created Successfully!</p>
+	<div class="btn-group btn-group-sm">
+    	<button type="button" class="btn btn-dark" (click)="goBack()">Back</button>
+    	<button type="button" class="btn btn-dark" (click)="newTask(); todoForm.reset()">Continue</button>
+  </div>
+</div>
+<!--div [hidden] = "submitted">
+    <form #todoform = "ngForm"> 
+   <input type = "text" name = "task" placeholder = "Task Name" [(ngModel)]="model.task"> 
+   <br/> 
+   <input type = "text" name = "subtasks" placeholder = "SubTasks" [(ngModel)]="model.subtasks"> 
+   <br/> 
+   <button class="btn btn-success" (click)="addTask()">Create Task</button> 
+</form>
+</div-->
+
